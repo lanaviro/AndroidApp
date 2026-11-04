@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".meni">
+    <include layout="@layout/toolbar"></include>
+
+
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="699dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pizza"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/pizza"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/text_pizza1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/pizza"
+                    android:layout_toRightOf="@+id/pizza"
+                    android:text="Pizza sa Feferonima"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_pizza1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_pizza1"
+                    android:layout_alignBottom="@+id/text_pizza1"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="-180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="-34dp"
+                    android:layout_toEndOf="@+id/pizza"
+                    android:layout_toRightOf="@+id/text_pizza1"
+                    android:text="Cijena: 4 EUR"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/add_pizza"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="110dp"
+                    android:layout_toRightOf="@+id/text_pizza1_2"
+                    android:layout_below="@+id/text_pizza1"
+                    android:src="@drawable/baseline_add_circle_24" />
+
+                <!--                <ImageView-->
+<!--                    android:id="@+id/remove_pizza"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/text_pizza1"-->
+<!--                    android:layout_marginLeft="-150dp"-->
+<!--                    android:layout_marginTop="14dp"-->
+<!--                    android:layout_toRightOf="@+id/add_pizza"-->
+<!--                    android:src="@drawable/baseline_remove_circle_24" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pasta"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/pasta"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/text_pasta1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/pasta"
+                    android:layout_toRightOf="@+id/pasta"
+                    android:text="Fettuccine Alfredo"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_pasta1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_pasta1"
+                    android:layout_alignBottom="@+id/text_pasta1"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="-180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="-34dp"
+                    android:layout_toEndOf="@+id/pasta"
+                    android:layout_toRightOf="@+id/text_pasta1"
+                    android:text="Cijena: 7 EUR" />
+
+
+                <ImageView
+                    android:id="@+id/add_pasta"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="110dp"
+                    android:layout_below="@+id/text_pasta1"
+                    android:layout_toRightOf="@+id/text_pasta1_2"
+                    android:src="@drawable/baseline_add_circle_24" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/remove_pasta"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/text_pasta1"-->
+<!--                    android:layout_marginLeft="-150dp"-->
+<!--                    android:layout_marginTop="14dp"-->
+<!--                    android:layout_toRightOf="@+id/add_pasta"-->
+<!--                    android:src="@drawable/baseline_remove_circle_24" />-->
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pasta2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/pasta2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/text_pasta2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/pasta2"
+                    android:layout_toRightOf="@+id/pasta2"
+                    android:text="Tomato Bacon Pasta"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_pasta2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_pasta2_1"
+                    android:layout_alignBottom="@+id/text_pasta2_1"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="-180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="-34dp"
+                    android:layout_toEndOf="@+id/pasta2"
+                    android:layout_toRightOf="@+id/text_pasta2_1"
+                    android:text="Cijena: 7 EUR" />
+
+                <ImageView
+                    android:id="@+id/add_pasta2"
+                    android:layout_below="@+id/text_pasta2_1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="110dp"
+                    android:src="@drawable/baseline_add_circle_24" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/remove_pasta2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/text_pasta2_1"-->
+<!--                    android:layout_marginLeft="-150dp"-->
+<!--                    android:layout_marginTop="14dp"-->
+<!--                    android:layout_toRightOf="@+id/add_pasta2"-->
+<!--                    android:src="@drawable/baseline_remove_circle_24" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pasta3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/pasta3"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/text_pasta3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/pasta3"
+                    android:layout_toRightOf="@+id/pasta3"
+                    android:text="Tortelini"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_pasta3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_pasta3_1"
+                    android:layout_alignBottom="@+id/text_pasta3_1"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="-180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="-34dp"
+                    android:layout_toEndOf="@+id/pasta3"
+                    android:layout_toRightOf="@+id/text_pasta3_1"
+                    android:text="Cijena: 8 EUR" />
+
+                <ImageView
+                    android:id="@+id/add_pasta3"
+                    android:layout_below="@+id/text_pasta3_1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="110dp"
+                    android:layout_toRightOf="@+id/text_pasta3_2"
+                    android:src="@drawable/baseline_add_circle_24" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/remove_pasta3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/text_pasta3_1"-->
+<!--                    android:layout_marginLeft="-150dp"-->
+<!--                    android:layout_marginTop="14dp"-->
+<!--                    android:layout_toRightOf="@+id/add_pasta3"-->
+<!--                    android:src="@drawable/baseline_remove_circle_24" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pasta4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/pasta4"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/text_pasta4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/pasta4"
+                    android:layout_toRightOf="@+id/pasta4"
+                    android:text="Pesto Pasta"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_pasta4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_pasta4_1"
+                    android:layout_alignBottom="@+id/text_pasta4_1"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="-180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="-34dp"
+                    android:layout_toEndOf="@+id/pasta4"
+                    android:layout_toRightOf="@+id/text_pasta4_1"
+                    android:text="Cijena: 7 EUR" />
+
+
+                <ImageView
+                    android:id="@+id/add_pasta4"
+                    android:layout_below="@+id/text_pasta4_1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="110dp"
+                    android:src="@drawable/baseline_add_circle_24" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/remove_pasta4"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/text_pasta4_1"-->
+<!--                    android:layout_marginLeft="-150dp"-->
+<!--                    android:layout_marginTop="14dp"-->
+<!--                    android:layout_toRightOf="@+id/add_pasta4"-->
+<!--                    android:src="@drawable/baseline_remove_circle_24" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/hamburger"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/hamburger"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/text_hamburger1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_toEndOf="@+id/hamburger"
+                    android:layout_toRightOf="@+id/hamburger"
+                    android:text="Hamburger - govedina, sir, salata"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_hamburger1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_hamburger1"
+                    android:layout_alignBottom="@+id/text_hamburger1"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="-180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="-34dp"
+                    android:layout_toEndOf="@+id/hamburger"
+                    android:layout_toRightOf="@+id/text_hamburger1"
+                    android:text="Cijena: 9 EUR" />
+
+                <ImageView
+                    android:id="@+id/add_hamburger"
+                    android:layout_below="@+id/text_hamburger1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="110dp"
+                    android:src="@drawable/baseline_add_circle_24" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/remove_hamburger"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/text_hamburger1"-->
+<!--                    android:layout_marginLeft="-150dp"-->
+<!--                    android:layout_marginTop="14dp"-->
+<!--                    android:layout_toRightOf="@+id/add_hamburger"-->
+<!--                    android:src="@drawable/baseline_remove_circle_24" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/salad"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/salad"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/text_salad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/salad"
+                    android:layout_toRightOf="@+id/salad"
+                    android:text="Salata - piletina"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_salad1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_salad1"
+                    android:layout_alignBottom="@+id/text_salad1"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="-180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="-34dp"
+                    android:layout_toEndOf="@+id/salad"
+                    android:layout_toRightOf="@+id/text_salad1"
+                    android:text="Cijena: 6 EUR" />
+
+                <ImageView
+                    android:id="@+id/add_salad"
+                    android:layout_below="@+id/text_salad1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="110dp"
+                    android:src="@drawable/baseline_add_circle_24" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/remove_salad"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/text_salad1"-->
+<!--                    android:layout_marginLeft="-150dp"-->
+<!--                    android:layout_marginTop="14dp"-->
+<!--                    android:layout_toRightOf="@+id/add_salad"-->
+<!--                    android:src="@drawable/baseline_remove_circle_24" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/soup"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/soup"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/text_soup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/soup"
+                    android:layout_toRightOf="@+id/soup"
+                    android:text="Juha od rajčica"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_soup1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_soup1"
+                    android:layout_alignBottom="@+id/text_soup1"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="-180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="-34dp"
+                    android:layout_toEndOf="@+id/soup"
+                    android:layout_toRightOf="@+id/text_soup1"
+                    android:text="Cijena: 5 EUR" />
+
+                <ImageView
+                    android:id="@+id/add_soup"
+                    android:layout_below="@+id/text_soup1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="110dp"
+                    android:layout_toRightOf="@+id/text_soup1_2"
+                    android:src="@drawable/baseline_add_circle_24" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/remove_soup"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/text_soup1"-->
+<!--                    android:layout_marginLeft="-150dp"-->
+<!--                    android:layout_marginTop="14dp"-->
+<!--                    android:layout_toRightOf="@+id/add_soup"-->
+<!--                    android:src="@drawable/baseline_remove_circle_24" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_soup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/soup2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/soup2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/text_soup2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/soup2"
+                    android:layout_toRightOf="@+id/soup2"
+                    android:text="Goveća juha"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_soup2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_soup2_1"
+                    android:layout_alignBottom="@+id/text_soup2_1"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="-180dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="-34dp"
+                    android:layout_toEndOf="@+id/soup2"
+                    android:layout_toRightOf="@+id/text_soup2_1"
+                    android:text="Cijena: 5 EUR" />
+
+                <ImageView
+                    android:id="@+id/add_soup2"
+                    android:layout_below="@+id/text_soup2_1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="110dp"
+                    android:layout_toRightOf="@+id/text_soup2_2"
+                    android:src="@drawable/baseline_add_circle_24" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/remove_soup2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/text_soup2_1"-->
+<!--                    android:layout_marginLeft="-150dp"-->
+<!--                    android:layout_marginTop="14dp"-->
+<!--                    android:layout_toRightOf="@+id/add_soup2"-->
+<!--                    android:src="@drawable/baseline_remove_circle_24" />-->
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="90dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="-34dp"
+                    android:text="Ukupna cijena: "
+                    android:textSize="14dp"
+                    android:layout_marginLeft="200dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
